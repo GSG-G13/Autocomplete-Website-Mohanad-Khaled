@@ -14,12 +14,22 @@
       </div>
     </template>
     <div class="app">
-      <img src="./img/weather.jpeg" alt="" />
+      <img src="./img/weather.jpeg" class="app-img" alt="" />
       <div class="form-outputs">
         <form method="GET" action="/country-search">
-          <div><input type="text" name="country" /><button>Send</button></div>
+          <div>
+            <input
+              type="text"
+              name="country"
+              class="country-input"
+              placeholder="Enter country name"
+            /><button class="country-btn">Send</button>
+          </div>
         </form>
-        <div class="result-container"></div>
+
+        <ul class="result-container">
+          <li class="result">Palestine</li>
+        </ul>
       </div>
       <div class="weather-results">
         <div class="weather">
