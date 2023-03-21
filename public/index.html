@@ -4,7 +4,59 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Countries Weather</title>
   </head>
-  <body></body>
+  <body>
+    <template>
+      <div>
+        <h1>Country</h1>
+      </div>
+    </template>
+    <div class="app">
+      <img src="./img/weather.jpeg" alt="" />
+      <div class="form-outputs">
+        <form method="GET" action="/country-search">
+          <div><input type="text" name="country" /><button>Send</button></div>
+        </form>
+        <div class="result-container"></div>
+      </div>
+      <div class="weather-results">
+        <div class="weather">
+          <div class="country-code">
+            <div class="country-div">
+              <p class="country">Country</p>
+              <p class="country-name">Palestine</p>
+            </div>
+            <div class="code-div">
+              <p class="code">Code</p>
+              <p class="code-name">PA</p>
+            </div>
+            <div class="one-part2"></div>
+          </div>
+          <div class="description-temp">
+            <div class="description-div">
+              <p class="description">Description</p>
+              <p class="description-name">ppppppppppp</p>
+            </div>
+            <div class="temp-div">
+              <p class="temp">temp</p>
+              <p class="degree">50</p>
+            </div>
+          </div>
+          <div class="timezone-speed">
+            <div class="timezone-div">
+              <p class="time-zone">TimeZone</p>
+              <p class="time-zone-number">7200</p>
+            </div>
+            <div class="speed-div">
+              <p class="speed">Speed</p>
+              <p class="speed-degree">50</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
 </html>
