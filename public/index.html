@@ -6,18 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Countries Weather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <template>
-      <div>
-        <h1>Country</h1>
-      </div>
-    </template>
     <div class="app">
+      <h1 class="website-title">Countries Weather</h1>
       <img src="./img/weather.jpeg" class="app-img" alt="" />
-      <div class="form-outputs">
-        <form method="GET" action="/country-search">
-          <div>
+      <div class="main-section">
+        <div class="form-outputs">
+          <div class="search-box">
             <input
               type="text"
               name="country"
@@ -25,44 +27,10 @@
               placeholder="Enter country name"
             /><button class="country-btn">Send</button>
           </div>
-        </form>
-        <ul class="result-container"></ul>
-      </div>
-      <!-- <div class="weather-results">
-        <div class="weather">
-          <div class="country-code">
-            <div class="country-div">
-              <p class="country">Country</p>
-              <p class="country-name">Palestine</p>
-            </div>
-            <div class="code-div">
-              <p class="code">Code</p>
-              <p class="code-name">PA</p>
-            </div>
-            <div class="one-part2"></div>
-          </div>
-          <div class="description-temp">
-            <div class="description-div">
-              <p class="description">Description</p>
-              <p class="description-name">ppppppppppp</p>
-            </div>
-            <div class="temp-div">
-              <p class="temp">temp</p>
-              <p class="degree">50</p>
-            </div>
-          </div>
-          <div class="timezone-speed">
-            <div class="timezone-div">
-              <p class="time-zone">TimeZone</p>
-              <p class="time-zone-number">7200</p>
-            </div>
-            <div class="speed-div">
-              <p class="speed">Speed</p>
-              <p class="speed-degree">50</p>
-            </div>
-          </div>
+          <ul class="result-container"></ul>
         </div>
-      </div> -->
+      </div>
+      <div class="weather-results"></div>
     </div>
   </body>
   <script src="main.js"></script>
